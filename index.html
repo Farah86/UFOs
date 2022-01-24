@@ -19,22 +19,24 @@
 
     <link rel="stylesheet" href="static/css/style.css">
 </head>
-<body>
+<body class="bg-dark">
+  <div class="wrapper">
     <!--The wrapper class adds a bit of extra functionality to Bootstrap-->
      <!--pecifies the styling in our stylesheet-->
     <link rel="stylesheet" href="static/css/style.css">
      <!--The Bootstrap Grid System-->
     <!--new component: a nav tag with a class of "navbar navbar-expand-lg."-->
      <!--provides extra responsiveness to the default navbar (to resize it self smoothly)-->
-    <nav class="navbar navbar-expand-lg">
+     <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
          <!--to reset the webpage after a filter has been applied to the table-->
         <a class="navbar-brand" href="index.html">UFO Sightings</a>
 
 
     </nav>
+  </div>
     <!--add a jumbotron with a header that reads "The Truth Is Out There."-->
     <div class="jumbotron">
-        <h1>The Truth Is Out There</h1>
+        <h1 class="display-4">The Truth Is Out There</h1>
       </div>
       <!--Create the container and row-->
       <!--Adding "container-fluid" to the div will ensure that both elements we're adding will span the width of the viewport-->
@@ -58,33 +60,48 @@ So what do YOU think? Are we alone in the universe? Are aliens trying to contact
         </div>
     </div>
 
-  <!--create a div with space for three columns and a nine-column div for the table.s-->
+  <!--create a div with space for three columns and a nine-column div for the tabl.e.s-->
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-3">
           <!--add a form tag-->
-          <form>
+          <form class="bg-dark">
             <p>Filter Search</p>
-          </form>
-          <!--Bootstrap apply predetermined styling to the list-->
-          <ul class="list-group">
-
-        </ul>
-        <!--add the list items: one for the input, one for the button-->
-        <li class="list-group-item">
-
-        </li>
-        <li class="list-group-item">
-        
-        </li>
-<!--This label represents a caption for the date item-->
+            <!--Bootstrap apply predetermined styling to the list-->
+    <ul class="list-group" bg-dark>
+      <!--add the list items: one for the input, one for the button-->
+      <li class="list-group-item" bg-dark>
+     <!--This label represents a caption for the date item-->
     <label for="date">Enter Date</label>
     <!--add the input-->
-    <input type="text" placeholder="1/10/2010" id="datetime" />
-    <!--add our button-->
-    <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-
+ <input type="text" placeholder="1/10/2010" id="datetime" />
+     </li>
+     <!--This label represents a caption for the city item-->
+     <li class="list-group-item bg-dark">
+      <label for="city">Enter City</label>
+      <input type="text" placeholder="benton" id="city" />
+  </li>  
+  <!--This label represents a caption for the state item-->
+  <li class="list-group-item bg-dark">
+    <label for="state">Enter State</label>
+    <input type="text" placeholder="ar" id="state" />
+</li>   
+<!--This label represents a caption for the country item-->
+<li class="list-group-item bg-dark">
+  <label for="country">Enter Country</label>
+  <input type="text" placeholder="us" id="country" />
+</li>
+<!--This label represents a caption for the shape item-->
+<li class="list-group-item bg-dark">
+  <label for="shape">Enter Shape </label>
+  <input type="text" placeholder="circle" id="shape" />
+</li> 
+<!--add our button-->
+<button id="filter-btn" type="button" class="btn btn-dark">Filter Table</button>
+</ul>
+          </form>
       </div>
+   
       <div class="col-md-9">
             <table class="table table-striped">
               <thead>
@@ -108,3 +125,5 @@ So what do YOU think? Are we alone in the universe? Are aliens trying to contact
           <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
                 <script src="JavaS/data.js"></script>
                 <script src="JavaS/app.js"></script>
+        </body>
+</html>
