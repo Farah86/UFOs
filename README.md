@@ -10,4 +10,5 @@ this search machine can help us search on the filters that we want ,so if i put 
  
 of course when we search for a specific city or state we need to clear the date filter so we can get the results.
 
-# 3.Summary:now in my opinion the idea behinde this project is great there is many fans of this subject no only in the US but in many other countries ,maybe in the future she can add more data that include other cities and more dates,and add a galary for some of the UFOs photo's that have been captured to make the subject more and more exciting leaving the people egear to see more .
+# 3. Summary:  
+now in my opinion the idea behinde this project is great there is many fans of this subject no only in the US but in many other countries ,maybe in the future she can add more data that include other cities and more dates,and add a galary for some of the UFOs photo's that have been captured to make the subject more and more exciting leaving the people egear to see more .
